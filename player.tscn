@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://r6a7bp8ap3po"]
+
+[ext_resource type="Texture2D" uid="uid://d34otxnrdygcc" path="res://ufoGreen.png" id="1_4flbx"]
+
+[node name="Player" type="RigidBody2D" unique_id=1642368741]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829106951]
+position = Vector2(585, 87)
+texture = ExtResource("1_4flbx")
