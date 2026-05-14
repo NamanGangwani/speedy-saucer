@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bdr5unkv10d4a"]
 
 [ext_resource type="Texture2D" uid="uid://g4oa6nsx7wo7" path="res://purple.png" id="1_3hls8"]
-[ext_resource type="Script" uid="uid://ch3ua14hh06ia" path="res://level_1.gd" id="1_hn12h"]
+[ext_resource type="Script" uid="uid://ch3ua14hh06ia" path="res://level.gd" id="1_hn12h"]
 [ext_resource type="PackedScene" uid="uid://r6a7bp8ap3po" path="res://player.tscn" id="2_hbghi"]
 
 [node name="Level1" type="Node2D" unique_id=1088423604]
