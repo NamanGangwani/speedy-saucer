@@ -11,7 +11,12 @@ gravity_scale = 0.0
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=829106951]
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899833765]
+scale = Vector2(0.6, 0.6)
 shape = SubResource("CircleShape2D_4flbx")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1247866494]
+position_smoothing_enabled = true

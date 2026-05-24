@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://g4oa6nsx7wo7" path="res://purple.png" id="1_3hls8"]
 [ext_resource type="Script" uid="uid://ch3ua14hh06ia" path="res://level.gd" id="1_hn12h"]
 [ext_resource type="PackedScene" uid="uid://r6a7bp8ap3po" path="res://player.tscn" id="2_hbghi"]
+[ext_resource type="PackedScene" uid="uid://dl1xflg3eyc8b" path="res://maze.tscn" id="4_ihfcg"]
 
 [node name="Level1" type="Node2D" unique_id=1088423604]
 script = ExtResource("1_hn12h")
@@ -15,4 +16,10 @@ texture = ExtResource("1_3hls8")
 stretch_mode = 1
 
 [node name="Player" parent="." unique_id=1642368741 instance=ExtResource("2_hbghi")]
-position = Vector2(532, 384)
+position = Vector2(197, 89)
+
+[node name="Maze" parent="." unique_id=1453560030 instance=ExtResource("4_ihfcg")]
+z_index = -50
+position = Vector2(202, 186)
+
+[connection signal="body_exited" from="Maze" to="." method="_on_maze_body_exited"]
